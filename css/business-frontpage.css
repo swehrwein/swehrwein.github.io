@@ -36,6 +36,10 @@ body {
     margin: 0 auto;
 }
 
+.btn-default {
+    margin-bottom: 5px;
+}
+
 footer {
     margin: 50px 0;
 }
