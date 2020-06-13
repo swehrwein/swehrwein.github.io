@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--[> Global site tag (gtag.js) - Google Analytics <]-->
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119964371-1"></script>-->
+    <!--<script>-->
+      <!--window.dataLayer = window.dataLayer || [];-->
+      <!--function gtag(){dataLayer.push(arguments);}-->
+      <!--gtag('js', new Date());-->
+
+      <!--gtag('config', 'UA-119964371-1');-->
+    <!--</script>-->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Scene Summarization via Motion Normalization</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/business-frontpage.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Image Background Page Header -->
+    <!-- Note: The background image is set within the business-casual.css file. -->
+    <!-- Page Content -->
+    <div class="container ">
+        <!-- /.row -->
+
+    <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 embed-responsive embed-responsive-16by9 text-center">
+     <video class="embed-responsive-item" width="960" height="512" autoplay loop>
+      <source src="plaza_ui_result.mp4" type="video/mp4">
+      <img src="motionnorm.jpg" />
+    </video> 
+    </div>
+    <div class="col-sm-1"></div>
+    </div> <!-- row -->
+
+    <div class="row text-center">
+        <h1>Scene Summarization via Motion Normalization</h1>
+        <h3>
+          <a target="_blank" href="https://facultyweb.cs.wwu.edu/~wehrwes/index.html">Scott Wehrwein</a>,
+          <a target="_blank" href="https://www.cs.cornell.edu/~kb/">Kavita Bala</a>, and
+          <a target="_blank" href="https://www.cs.cornell.edu/~snavely/">Noah Snavely</a>
+        </h3>
+        <h4 class="text-muted">IEEE Transactions on Computer Graphics and Visualization (to appear)</h4>
+
+
+    </div><!--row-->
+
+    <div class="row">
+            <div class="col-sm-1"></div>
+        <div class="col-sm-10 block-center">
+            <h3>TL;DR</h3>
+            <p>We speed up long videos by different amounts, then composite the interesting parts together to form a single, seamless video showing a scene's goings-on at multiple timescales at once.</p>
+            <h3>Quick Links</h3>
+            <ul>
+                <li>Paper <a href="motionnorm.pdf">(47.1MB PDF)</a> or <a href="motionnorm_lo.pdf">(12MB PDF)</a></li>
+              <li>Video <a hrf="https://youtu.be/7qDdp7RyOS0">(Youtube)</a></li>
+            </ul>
+
+        </div>
+            <div class="col-sm-1"></div>
+    </div> <!-- row -->
+
+
+    <div class="row">
+            <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <h3>Abstract</h3>
+            <p>Many image editing techniques make processing decisions based on measures of similarity between pairs of pixels. Traditionally, pixel similarity is measured using a simple L2 distance on RGB or luminance values. In this work,we explore a richer notion of similarity based on feature embeddings learned by convolutional neural networks. We propose to measure pixel similarity by combining distance in a semantically-meaningful feature embedding with traditional color difference. Using semantic features from the penultimate layer of an off-the-shelf semantic segmentation model, we evaluate our distance measure in two image editing applications. A user study shows that incorporating semantic distances into content-aware resizing via seam carving produces improved results. Off-the-shelf semantic features are found to have mixed effectiveness in content-based range masking, suggesting that training better general-purpose pixel embeddings presents a promising future direction for creating semantically-meaningful feature spaces that can be used in a variety of applications.</p>
+            <h3>Bibtex</h3>
+            <p>
+            <pre>
+@article{wehrwein_scene_2020,
+    author={S. {Wehrwein} and K. {Bala} and N. {Snavely}},
+    journal={IEEE Transactions on Visualization and Computer Graphics}, 
+    title={Scene Summarization via Motion Normalization}, 
+    year={2020},
+    volume={},
+    number={},
+    pages={1-1},
+}
+</pre>
+            </p>
+        </div>
+            <div class="col-sm-1"></div>
+    </div><!-- row -->
+
+        <!-- Footer -->
+        <footer>
+        </footer>
+    </div>
+    <!-- /.container -->
+
+    <!--[> jQuery <]-->
+    <!--<script src="js/jquery.js"></script>-->
+
+    <!--[> Bootstrap Core JavaScript <]-->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+
+</body>
+
+</html>
